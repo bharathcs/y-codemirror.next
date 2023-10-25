@@ -17,9 +17,15 @@
   ],
   "exports": {
     ".": {
-      "import": "./src/index.js",
       "module": "./src/index.js",
-      "require": "./dist/y-codemirror.cjs"
+      "import": {
+        "types": "./dist/src/index.d.ts",
+        "default": "./src/index.js"
+      },
+      "require": {
+        "types": "./dist/src/index.d.ts",
+        "default": "./dist/y-codemirror.cjs"
+      }
     },
     "./package.json": "./package.json"
   },
